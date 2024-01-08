@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylep.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <label for="pass1" class="h1">Name</label>
+        <input type="text" class="username" placeholder="username">
+        <label for="pass1" class="h1">Password</label>
+        <input type="password" id="pass1" placeholder="password" name="" onkeyup= "return validate()"><!--call function to validate function-->
+        <label for="pass2" class="h1">Conform</label>
+        <input type="password" id="pass2" placeholder="confirm" name="" onkeyup="return confirm()">
+        <span id="message_alert"></span>
+        <div class="Buttons">
+            <button id="create" class="submit" onclick="message_alert()">Submit</button>
+        </div>
+        <div class="error">
+            <ul class="h4">
+                <li id="upper">Atleast one uppercase</li>
+                <li id="lower">Atleast one lowercase</li>
+                <li id="special_char">Atleast one special character</li>
+                <li id="number">Atleast one number</li>
+                <li id="length">Minimum 6 characters</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="scriptp.js"></script>
+</body>
+</html>
